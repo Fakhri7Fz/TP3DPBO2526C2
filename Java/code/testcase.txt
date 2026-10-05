@@ -1,0 +1,353 @@
+TESTCASE TP3 DPBO
+
+==================================================
+CASE 1 - INPUT PLAYER VALID
+===========================
+
+Tujuan:
+Menguji penambahan Player dengan seluruh data valid.
+
+Input:
+1
+P003
+Ryu
+15
+150
+120
+3000
+2000
+5
+2
+I004
+Health Potion
+Konsumsi
+0.5
+150
+3
+I005
+Steel Sword
+Senjata
+6
+800
+1
+
+Hasil:
+Player berhasil ditambahkan.
+
+==================================================
+CASE 2 - INPUT NPC VALID
+========================
+
+Tujuan:
+Menguji penambahan NPC dengan seluruh data valid.
+
+Input:
+2
+N003
+Blacksmith
+10
+100
+100
+Pengrajin
+0
+2
+Selamat datang di bengkel saya!
+Saya dapat membuat senjata untukmu.
+
+Hasil:
+NPC berhasil ditambahkan.
+
+==================================================
+CASE 3 - ID KARAKTER DUPLIKAT
+=============================
+
+Tujuan:
+Menguji ID yang sudah digunakan oleh karakter lain.
+
+Input:
+1
+P001
+
+Hasil:
+Error: ID sudah digunakan oleh karakter lain.
+
+Kemudian masukkan ID baru.
+
+==================================================
+CASE 4 - INPUT KOSONG
+=====================
+
+Tujuan:
+Menguji input String yang tidak boleh kosong.
+
+Input:
+1
+
+ID:
+[tekan Enter]
+
+Hasil:
+Error: input tidak boleh kosong.
+
+==================================================
+CASE 5 - LEVEL NEGATIF
+======================
+
+Tujuan:
+Menguji level dengan nilai negatif.
+
+Input:
+1
+P004
+Ryu
+-5
+
+Hasil:
+Error: nilai minimal adalah 0.
+
+==================================================
+CASE 6 - MAX HP TIDAK VALID
+===========================
+
+Tujuan:
+Menguji Max HP dengan nilai kurang dari atau sama dengan 0.
+
+Input:
+1
+P005
+Ken
+10
+0
+
+Hasil:
+Error: nilai minimal adalah 1.
+
+==================================================
+CASE 7 - HP MELEBIHI MAX HP
+===========================
+
+Tujuan:
+Menguji HP yang lebih besar dari Max HP.
+
+Input:
+1
+P006
+Ken
+10
+100
+150
+
+Hasil:
+Error: HP tidak boleh lebih besar dari Max HP.
+
+==================================================
+CASE 8 - EXP NEGATIF
+====================
+
+Tujuan:
+Menguji Experience dengan nilai negatif.
+
+Input:
+1
+P007
+Ken
+10
+100
+80
+-500
+
+Hasil:
+Error: nilai minimal adalah 0.
+
+==================================================
+CASE 9 - GOLD NEGATIF
+=====================
+
+Tujuan:
+Menguji Gold dengan nilai negatif.
+
+Input:
+1
+P008
+Ken
+10
+100
+80
+500
+-100
+
+Hasil:
+Error: nilai minimal adalah 0.
+
+==================================================
+CASE 10 - KAPASITAS INVENTORY TIDAK VALID
+=========================================
+
+Tujuan:
+Menguji kapasitas Inventory dengan nilai kurang dari 1.
+
+Input:
+1
+P009
+Ken
+10
+100
+80
+500
+1000
+0
+
+Hasil:
+Error: nilai minimal adalah 1.
+
+==================================================
+CASE 11 - JUMLAH ITEM MELEBIHI KAPASITAS
+========================================
+
+Tujuan:
+Menguji jumlah Item yang melebihi kapasitas Inventory.
+
+Input:
+1
+P010
+Ken
+10
+100
+80
+500
+1000
+2
+3
+
+Hasil:
+Error: jumlah Item tidak boleh melebihi kapasitas Inventory (2).
+
+==================================================
+CASE 12 - BERAT ITEM NEGATIF
+============================
+
+Tujuan:
+Menguji berat Item dengan nilai negatif.
+
+Input:
+1
+P011
+Ken
+10
+100
+80
+500
+1000
+2
+1
+I006
+Item Test
+Material
+-2
+
+Hasil:
+Error: nilai minimal adalah 0.0.
+
+==================================================
+CASE 13 - HARGA ITEM NEGATIF
+============================
+
+Tujuan:
+Menguji harga jual Item dengan nilai negatif.
+
+Input:
+1
+P012
+Ken
+10
+100
+80
+500
+1000
+2
+1
+I007
+Item Test
+Material
+2
+-500
+
+Hasil:
+Error: nilai minimal adalah 0.
+
+==================================================
+CASE 14 - QUANTITY NEGATIF
+==========================
+
+Tujuan:
+Menguji quantity Item dengan nilai negatif.
+
+Input:
+1
+P013
+Ken
+10
+100
+80
+500
+1000
+2
+1
+I008
+Item Test
+Material
+2
+500
+-3
+
+Hasil:
+Error: nilai minimal adalah 0.
+
+==================================================
+CASE 15 - INPUT ANGKA BUKAN ANGKA
+=================================
+
+Tujuan:
+Menguji input numerik dengan karakter atau teks.
+
+Input:
+1
+P014
+Ken
+abc
+
+Hasil:
+Error: input harus berupa angka.
+
+==================================================
+CASE 16 - STATUS HOSTILE TIDAK VALID
+====================================
+
+Tujuan:
+Menguji input Hostile selain 0 dan 1.
+
+Input:
+2
+N004
+Guard
+10
+100
+100
+Penjaga
+2
+
+Hasil:
+Error: masukkan 1 atau 0.
+
+==================================================
+CATATAN
+=======
+
+Untuk setiap testcase yang menghasilkan error, setelah pesan
+error ditampilkan program akan meminta input yang benar kembali.
+
+Testcase digunakan untuk pengujian pada:
+
+* CPP
+* Python
+* Java
