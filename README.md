@@ -1078,10 +1078,6 @@ Dokumentasi mencakup:
 
 ### Pengujian Error Handling
 
-Dokumentasi error handling:
-
-### Pengujian Error Handling
-
 1. **Testcase 3 - ID karakter duplikat**
 
 ![C++ - ID karakter duplikat](CPP/dokumentasi/CPP_Id_Karakter_Duplikat.png)
@@ -1168,10 +1164,6 @@ Dokumentasi error handling:
 
 ### Pengujian Error Handling
 
-Dokumentasi error handling:
-
-### Pengujian Error Handling
-
 1. **Testcase 3 - ID karakter duplikat**
 
 ![Python - ID karakter duplikat](Python/dokumentasi/Python_Id_Karakter_Duplikat.png)
@@ -1255,10 +1247,6 @@ Dokumentasi error handling:
 ![Java - Hasil Tambah](Java/dokumentasi/Java_Hasil_Tambah2.png)
 
 ![Java - Hasil Tambah](Java/dokumentasi/Java_Hasil_Tambah3.png)
-
-### Pengujian Error Handling
-
-Dokumentasi error handling:
 
 ### Pengujian Error Handling
 
